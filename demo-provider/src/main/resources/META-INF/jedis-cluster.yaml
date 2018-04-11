@@ -1,0 +1,14 @@
+!!com.zhouwei.jedis.JedisSentinelYamlBean {
+jedisPoolBean: !!com.zhouwei.jedis.JedisPoolBean {
+ maxTotal: 50000,
+ maxIdle: 5000,
+ maxWaitMillis: 10000,
+ testOnBorrow: false,
+ testOnReturn: false,
+ blockWhenExhausted: false,
+ numTestsPerEvictionRun: 100
+},
+jedisClusterNode: [{host: "192.168.32.138",port: 7001},{host: "192.168.32.138",port: 7002},{host: "192.168.32.138",port: 7003},{host: "192.168.32.138",port: 7004},{host: "192.168.32.138",port: 7005},{host: "192.168.32.138",port: 7006}],
+timeout: 50000,
+maxAttempts: 5
+}
